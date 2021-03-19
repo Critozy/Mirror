@@ -1,4 +1,4 @@
-[![Slam](https://telegra.ph/file/58c072558e21014dcfd65.png)
+![Slam](https://telegra.ph/file/58c072558e21014dcfd65.png)
 
 # Misaka Bot
 This is a telegram bot writen in python for mirroring files on the internet to our beloved Google Drive.
