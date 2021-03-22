@@ -59,14 +59,14 @@ async def return_search(query, page=1, sukebei=False):
 
 message_info = dict()
 ignore = set()
-@app.on_message(filters.command(['ts', 'nyaa', 'nyaasi']))
+@app.on_message(filters.command(['ts2', 'nyaa2', 'nyaasi2']))
 async def nyaa_search(client, message):
     text = message.text.split(' ')
     text.pop(0)
     query = ' '.join(text)
     await init_search(client, message, query, False)
 
-@app.on_message(filters.command(['sts', 'sukebei']))
+@app.on_message(filters.command(['sts2', 'sukebei2']))
 async def nyaa_search_sukebei(client, message):
     text = message.text.split(' ')
     text.pop(0)
@@ -138,14 +138,14 @@ async def nyaa_callback(client, callback_query):
 @run_async
 def searchhelp(update, context):
     help_string = '''
-• /ts <i>[search query]</i>
-• /nyaa <i>[search query]</i>
-• /nyaasi <i>[search query]</i>
+• /ts2 <i>[search query]</i>
+• /nyaa2 <i>[search query]</i>
+• /nyaasi2 <i>[search query]</i>
 
-• /sts <i>[search query]</i>
-• /sukebei <i>[search query]</i>
+• /sts2 <i>[search query]</i>
+• /sukebei2 <i>[search query]</i>
 '''
-    update.effective_message.reply_photo("https://telegra.ph/file/db03910496f06094f1f7a.jpg", help_string, parse_mode=ParseMode.HTML)
+    update.effective_message.reply_photo("https://telegra.ph/file/58c072558e21014dcfd65.png", help_string, parse_mode=ParseMode.HTML)
     
     
 SEARCHHELP_HANDLER = CommandHandler("tshelp", searchhelp)
