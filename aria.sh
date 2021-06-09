@@ -1,5 +1,5 @@
 export MAX_DOWNLOAD_SPEED=0
-tracker_list=$(curl -Ns https://raw.githubusercontent.com/yuno74/tracker/main/tracker.txt | awk '$1' | tr '\n' ',')
+tracker_list=$(curl -Ns https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt | awk '$1' | tr '\n' ',')
 export MAX_CONCURRENT_DOWNLOADS=6
 
 aria2c --enable-rpc --rpc-listen-all=false --rpc-listen-port 6800 --check-certificate=false\
