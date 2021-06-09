@@ -44,10 +44,10 @@ def stats(update, context):
 @run_async
 def start(update, context):
     start_string = f'''
-Hi, I'm [Misaka]
+Hi, I'm [Mimimi]
 Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
-    update.effective_message.reply_photo("https://telegra.ph/file/58c072558e21014dcfd65.png", start_string, parse_mode=ParseMode.MARKDOWN)
+    update.effective_message.reply_photo("https://heroku.critozymirror.tk/0:/dreamer.jpg", start_string, parse_mode=ParseMode.MARKDOWN)
 
 
 @run_async
